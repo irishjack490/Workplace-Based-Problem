@@ -26,10 +26,10 @@ function areAllIdsUnique(allIds) {
   for (let id of allIds) {
     const isThisIdUnique = isUnique(id, allIds);
     if (!isThisIdUnique) {
-      return false;
+      return true; // it is true because not all Ids are true
     }
   }
-  return true;
+  return false;
 }
 
 console.log(areAllIdsUnique(customerIds));
