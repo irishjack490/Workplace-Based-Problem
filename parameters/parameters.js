@@ -26,7 +26,7 @@ function areAllIdsUnique(allIds) {
   for (let id of allIds) {
     const isThisIdUnique = isUnique(id, allIds);
     if (!isThisIdUnique) {
-      return true; // it is true because not all Ids are true
+      return true; // it is true because not all Ids are unique
     }
   }
   return false;
